@@ -15,7 +15,7 @@ function CareerItem(props) {
   let classNames = `career-item col-md-5 col-sm-12 mb-3 ${orderClassName} ${typeClassName}`;
   let dateStart = data.monthStart + ", " + data.yearStart;
   let onGoing = !(data.monthEnd && data.yearEnd);
-  dateEnd = !onGoing ? data.monthEnd + ", " + data.yearEnd : t("Present");
+  let dateEnd = !onGoing ? data.monthEnd + ", " + data.yearEnd : t("Present");
 
   return (
     <div className={classNames}>
@@ -88,7 +88,7 @@ function OrderButton(props) {
 }
 
 function FilterButton(props) {
-  icon = null;
+  let icon = null;
   switch (props.type) {
     case "studies":
       icon = <i className="fa-solid fa-graduation-cap"></i>;

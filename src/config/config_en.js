@@ -188,7 +188,7 @@ let projects = [
     languages: ["Python", "HTML", "CSS"],
   },
 ];
-config_en = {
+let config_en = {
   headers: headers,
   aboutItems: aboutItems,
   careerItems: careerItems,

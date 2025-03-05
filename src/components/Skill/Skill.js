@@ -13,18 +13,21 @@ function SkillItem(props) {
   );
 }
 function SkillGroup(props) {
-  group_name = props.group.group_name;
-  group_skills = props.group.skills;
-  return (
-    <Col className="skill-group" sm={6} xl={3}>
-      <h3>{group_name}</h3>
-      <ul className="skill-group-list">
-        {group_skills.map((skill, i) => (
-          <SkillItem key={`skill-item-${i}`} skill={skill} />
-        ))}
-      </ul>
-    </Col>
-  );
+  if (props && props.group) {
+    let group_name = props.group.group_name;
+    let group_skills = props.group.skills;
+    return (
+      <Col className="skill-group" sm={6} xl={3}>
+        <h3>{group_name}</h3>
+        <ul className="skill-group-list">
+          {group_skills.map((skill, i) => (
+            <SkillItem key={`skill-item-${i}`} skill={skill} />
+          ))}
+        </ul>
+      </Col>
+    );
+  }
+  return <div></div>;
 }
 
 function LegendItem(props) {

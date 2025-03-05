@@ -11,7 +11,7 @@ import getConfig from "../config/Config";
 
 export function App() {
   const { t, i18n } = useTranslation();
-  config = getConfig(i18n.language);
+  let config = getConfig(i18n.language);
   return (
     <section className="main">
       <Header headers={config.headers}></Header>

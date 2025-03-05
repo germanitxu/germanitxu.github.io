@@ -190,7 +190,7 @@ let projects = [
     languages: ["Python", "HTML", "CSS"],
   },
 ];
-config_es = {
+let config_es = {
   headers: headers,
   aboutItems: aboutItems,
   careerItems: careerItems,
