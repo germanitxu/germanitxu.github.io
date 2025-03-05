@@ -20,7 +20,7 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "es", //default language
+  lng: "en", //default language
   keySeparator: false,
   interpolation: {
     escapeValue: false,
