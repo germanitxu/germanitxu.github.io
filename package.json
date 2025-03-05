@@ -11,7 +11,9 @@
     "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
     "prebuild": "shx rm -rf dist/*",
     "build": "parcel build ./src/index.html --public-url ./",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Germán Muñoz",
   "license": "ISC",
@@ -20,6 +22,7 @@
     "@fontsource/roboto": "^5.1.1",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "gh-pages": "^6.3.0",
     "i18next": "^24.2.2",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
