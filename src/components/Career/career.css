@@ -1,0 +1,238 @@
+button.career-order-button {
+    background-color: var(--black);
+    border: none;
+    margin-right: 15px;
+}
+
+button.career-order-button>i {
+    color: var(--terciary);
+}
+
+button.career-order-button:hover, button.career-order-button:active {
+    background-color: var(--terciary) !important;
+}
+
+button.career-order-button:hover>i, button.career-order-button:active>i {
+    color: var(--black) !important;
+}
+
+.career-filter {
+    margin-right: 10px;
+}
+
+
+.btn.career-filter-button {
+    background-color: var(--black);
+    border: none;
+}
+
+.career-filter-button>i {
+    color: var(--terciary);
+}
+
+.career-filter-button:hover, .career-filter-button:active {
+    background-color: var(--terciary) !important;
+}
+
+.career-filter-button:hover>i, .career-filter-button:active>i {
+    color: var(--black) !important;
+}
+
+.career-filter-button.selected {
+    background-color: var(--terciary) !important;
+}
+
+.career-filter-button.selected>i {
+    color: var(--black) !important;
+}
+
+/* Tooltip text */
+button .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--black);
+    color: var(--terciary);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+
+    top: 135%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+button:hover .tooltiptext {
+    visibility: visible;
+}
+
+.career-container {
+    position: relative;
+    margin-top: 100px;
+}
+
+.career-order {
+    align-items: flex-end;
+    display: flex;
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+
+.career-order p {
+    margin: 0;
+}
+
+.career-chrono-item {
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.career-item {
+    background-color: var(--black);
+    padding: 25px;
+    position: relative;
+    border-top: 10px solid var(--secondary);
+}
+
+.career-item h3, .career-item a {
+    color: var(--terciary);
+}
+
+.career-item h3 i {
+    color: var(--terciary);
+}
+
+.career-item a i {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.career-item h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.career-item h3>i {
+    font-size: 60px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.career-item p {
+    color: var(--white);
+}
+
+
+.career-item.even {
+    border-radius: 15px 5px;
+    align-self: self-end;
+}
+
+.career-item.odd {
+    border-radius: 5px 15px;
+}
+
+.career-chrono-line {
+    background-color: var(--black);
+    border-radius: 5px;
+    width: 10px;
+    height: calc(100% + 100px);
+    position: absolute;
+    left: calc(50% - 5px);
+    top: -50px;
+}
+
+.career-line-point {
+    background-color: var(--secondary);
+    cursor: pointer;
+    border: 4px solid var(--white);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    transition: all .4s;
+    position: absolute;
+    left: calc(50% - 13px);
+}
+
+.career-line-point p {
+    background-color: var(--black);
+    color: var(--terciary);
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 14px;
+    transition: all .4s;
+    position: absolute;
+
+}
+
+.career-line-point:hover p {
+    display: block;
+}
+
+.career-line-point:hover {
+    background-color: var(--terciary);
+    border-color: var(--black);
+}
+
+.career-line-point.even p {
+    left: -120px;
+}
+
+.career-line-point.odd p {
+    left: 40px;
+}
+
+.career-line-point.top p {
+    top: -30px;
+    left: 40px;
+    text-align: center;
+}
+
+.career-line-point.bottom p {
+    bottom: -50px;
+    left: 40px;
+}
+
+.career-chrono {
+    margin-bottom: 100px;
+}
+
+
+@media (max-width: 1200) {
+    .career-container {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 768) {
+    .career-order {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+    }
+
+    .career-chrono-line {
+        display: none;
+    }
+
+    .career-container {
+        margin-top: 20px;
+    }
+
+    .career-line-point {
+        display: none;
+    }
+
+    .career-item.even, .career-item.odd {
+        border-radius: 15px;
+        border-bottom: 10px solid var(--secondary);
+    }
+
+}

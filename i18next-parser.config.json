@@ -1,0 +1,4 @@
+{
+  "locales": ["en", "es"],
+  "output": "./src/locales/$LOCALE/translation.json"
+}

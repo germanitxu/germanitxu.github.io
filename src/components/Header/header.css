@@ -1,0 +1,11 @@
+a.header-link {
+    color: var(--primary);
+    text-decoration: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+a.header-link:hover {
+    text-decoration: underline;
+    color: var(--secondary);
+}

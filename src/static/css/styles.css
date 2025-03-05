@@ -1,0 +1,80 @@
+:root {
+    --black: #1e1e1e;
+    --white: #d4d4d4;
+    --fullWhite: #FFFFFF;
+    --primary: #230895;
+    --secondary: #FF7F50;
+    --terciary: #7FFFD4;
+
+    /* Colors with altered */
+    --black30: rgb(30 30 30 / 30%);
+
+    /*skill levels pallete*/
+    --red: #e74c3c;
+    --blue: #2980b9;
+    --green: #27ae60;
+}
+
+body {
+    background-color: var(--white);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary);
+}
+
+h1 {
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgb(30 30 30 / 30%);
+}
+
+strong {
+    color: var(--primary);
+}
+
+
+.primary {
+    color: var(--primary);
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+.terciary {
+    color: var(--terciary);
+}
+
+.black {
+    color: var(--black);
+}
+
+.white {
+    color: var(--white);
+}
+
+nav.header-navbar {
+    background-color: var(--fullWhite);
+    box-shadow: 0px 0px 11px -2px var(--secondary);
+}
+
+.main {
+    display: grid;
+}
+
+@media (max-width: 1200) {
+    h2 {
+        text-align: center;
+    }
+
+    .main>.container {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}

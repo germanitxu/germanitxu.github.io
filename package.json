@@ -1,0 +1,49 @@
+{
+  "name": "germanitxu-react",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "source": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build",
+    "makemessages": "i18next src/components/**/*.js"
+  },
+  "author": "Germán Muñoz",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/montserrat": "^5.1.1",
+    "@fontsource/roboto": "^5.1.1",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "i18next": "^24.2.2",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
+    "react-scroll": "^1.9.3"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.13.3",
+    "@parcel/transformer-webmanifest": "^2.13.3",
+    "assert": "^2.1.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "constants-browserify": "^1.0.0",
+    "crypto-browserify": "^3.12.1",
+    "events": "^3.3.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "parcel": "^2.13.3",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "string_decoder": "^1.3.0",
+    "url": "^0.11.4",
+    "util": "^0.12.5",
+    "vm-browserify": "^1.1.2"
+  }
+}

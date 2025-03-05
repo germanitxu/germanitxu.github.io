@@ -1,0 +1,10 @@
+# Node and Parcel folders
+/.parcel-cache
+/node_modules
+/dist
+.cache
+
+# Files used in development
+*.excalidraw
+*.env
+*.zip

@@ -1,0 +1,36 @@
+/*Intro container*/
+.intro-ct {
+    padding-top: 150px;
+    background-color: var(--black);
+    min-height: 100vh;
+    margin-bottom: 3rem;
+}
+
+.intro-ct .intro-image {
+    max-width: 900px;
+}
+
+
+.dark strong {
+    color: var(--terciary);
+}
+
+
+@media (max-width: 992) {
+    .intro-ct .intro-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576) {
+    .intro-ct .intro-image {
+        max-width: 400px;
+    }
+
+    .intro-ct {
+        min-height: auto;
+        padding-top: 110px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+}
