@@ -1,0 +1,72 @@
+:root {
+  --black: #1e1e1e;
+  --white: #d4d4d4;
+  --fullWhite: #fff;
+  --primary: #230895;
+  --secondary: coral;
+  --terciary: #7fffd4;
+  --black30: #1e1e1e4d;
+  --red: #e74c3c;
+  --blue: #2980b9;
+  --green: #27ae60;
+}
+
+body {
+  background-color: var(--white);
+}
+
+* {
+  color: var(--black);
+  font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  color: var(--secondary);
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px #1e1e1e4d;
+  font-size: 25px;
+}
+
+strong, .primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.terciary {
+  color: var(--terciary);
+}
+
+.black {
+  color: var(--black);
+}
+
+.white {
+  color: var(--white);
+}
+
+nav.header-navbar {
+  background-color: var(--fullWhite);
+  box-shadow: 0px 0px 11px -2px var(--secondary);
+}
+
+.main {
+  display: grid;
+}
+
+@media (width <= 1200px) {
+  h2 {
+    text-align: center;
+  }
+
+  .main > .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=index.9ae1efef.css.map */
