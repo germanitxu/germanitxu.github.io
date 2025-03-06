@@ -168,6 +168,8 @@ button:hover .tooltiptext {
     font-size: 14px;
     transition: all .4s;
     position: absolute;
+    min-width: 110px;
+    text-align: center;
 
 }
 
@@ -181,7 +183,7 @@ button:hover .tooltiptext {
 }
 
 .career-line-point.even p {
-    left: -120px;
+    left: -130px;
 }
 
 .career-line-point.odd p {
